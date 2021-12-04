@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
   //   })
   // }
   const users = await repository.users()
-  res.json(users)
+  res.json(users, {doi: 10})
 });
 
 router.get('/user', async (req, res) => {
